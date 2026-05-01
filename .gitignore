@@ -1,0 +1,9 @@
+gcloud.zip
+gcloud_extracted/
+google-cloud-sdk/
+mingit/
+temp/
+.gemini/
+installer.exe
+*.webp
+mingit.zip

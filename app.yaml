@@ -1,0 +1,18 @@
+runtime: python39 # Using python39 runtime just as a basic static server environment, or we can use generic
+# App Engine static routing
+handlers:
+- url: /
+  static_files: index.html
+  upload: index.html
+
+- url: /(.*\.css)
+  static_files: \1
+  upload: .*\.css
+
+- url: /(.*\.js)
+  static_files: \1
+  upload: .*\.js
+
+- url: /(.*)
+  static_files: index.html
+  upload: index.html

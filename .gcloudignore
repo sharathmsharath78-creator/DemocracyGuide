@@ -1,0 +1,13 @@
+.gcloudignore
+.git
+.gitignore
+gcloud.zip
+gcloud_extracted/
+google-cloud-sdk/
+node_modules/
+.gemini/
+installer.exe
+temp/
+**/google-cloud-sdk/**
+**/gcloud_extracted/**
+**/gcloud.zip

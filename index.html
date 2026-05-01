@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Democracy Guide | Indian Election Assistant</title>
+    <meta name="description" content="An interactive guide to understanding the Indian Election Process, Timelines, and Key Concepts.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Background Decoration -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-check-to-slot"></i>
+                <span>DemocracyGuide</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-btn active" data-target="home">Home</a></li>
+                <li><a href="#process" class="nav-btn" data-target="process">The Process</a></li>
+                <li><a href="#timeline" class="nav-btn" data-target="timeline">Timeline</a></li>
+                <li><a href="#flashcards" class="nav-btn" data-target="flashcards">Flashcards</a></li>
+                <li><a href="#quiz" class="nav-btn" data-target="quiz">Quiz</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <!-- HOME SECTION -->
+        <section id="home" class="view-section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <span class="badge">Know Your Rights</span>
+                    <h1 class="hero-title">Understand the <span class="highlight">Indian Election System</span></h1>
+                    <p class="hero-subtitle">Interactive guides, timelines, flashcards, and quizzes to help you navigate the world's largest democratic exercise.</p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" onclick="document.querySelector('[data-target=\'process\']').click()">Start Learning</button>
+                        <button class="btn btn-secondary" onclick="document.querySelector('[data-target=\'quiz\']').click()">Take a Quiz</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="glass-card stat-card">
+                        <i class="fa-solid fa-users text-gradient"></i>
+                        <h3>900M+</h3>
+                        <p>Eligible Voters</p>
+                    </div>
+                    <div class="glass-card stat-card">
+                        <i class="fa-solid fa-landmark text-gradient"></i>
+                        <h3>543</h3>
+                        <p>Constituencies</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS SECTION -->
+        <section id="process" class="view-section hidden">
+            <div class="section-header">
+                <h2>The Complete <span class="highlight">Process</span></h2>
+                <p>How the world's largest democracy works, step-by-step.</p>
+            </div>
+            
+            <div class="process-grid">
+                <div class="glass-card process-card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-building-columns"></i></div>
+                    <h3>The Election Commission</h3>
+                    <p>The Election Commission of India (ECI) is an autonomous constitutional authority responsible for administering election processes in India at national, state and district level.</p>
+                </div>
+                <div class="glass-card process-card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-sitemap"></i></div>
+                    <h3>Types of Elections</h3>
+                    <ul class="feature-list">
+                        <li><strong>Lok Sabha:</strong> General elections for the lower house (PM).</li>
+                        <li><strong>Rajya Sabha:</strong> Upper house, elected by state legislators.</li>
+                        <li><strong>Vidhan Sabha:</strong> State assembly elections (CM).</li>
+                        <li><strong>Local Bodies:</strong> Panchayats and Municipalities.</li>
+                    </ul>
+                </div>
+                <div class="glass-card process-card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-id-card"></i></div>
+                    <h3>Voter Registration</h3>
+                    <p>Any Indian citizen above 18 years can vote. Registration is done via <strong>Form 6</strong> online on the Voter Service Portal or offline through Booth Level Officers (BLOs).</p>
+                    <a href="https://voters.eci.gov.in/" target="_blank" class="btn btn-sm">Visit Voter Portal <i class="fa-solid fa-external-link-alt"></i></a>
+                </div>
+                <div class="glass-card process-card" style="grid-column: 1 / -1;">
+                    <div class="icon-wrapper"><i class="fa-solid fa-list-check"></i></div>
+                    <h3>The Complete Election Cycle</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                        <ul class="feature-list">
+                            <li><strong>1. Delimitation:</strong> Boundary fixing of constituencies.</li>
+                            <li><strong>2. Voter Rolls:</strong> Updating the electoral roll (voter list).</li>
+                            <li><strong>3. Notification:</strong> ECI issues election schedule & MCC begins.</li>
+                            <li><strong>4. Nomination:</strong> Candidates file and scrutinize papers.</li>
+                        </ul>
+                        <ul class="feature-list">
+                            <li><strong>5. Campaigning:</strong> Rallies and manifesto releases. Ends 48 hrs before poll.</li>
+                            <li><strong>6. Polling Day:</strong> Voters verify identity and cast votes via EVM/VVPAT.</li>
+                            <li><strong>7. Counting:</strong> EVMs transported to strong rooms and counted on a fixed day.</li>
+                            <li><strong>8. Results:</strong> Declaration of winners and government formation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TIMELINE SECTION -->
+        <section id="timeline" class="view-section hidden">
+            <div class="section-header">
+                <h2>Election <span class="highlight">Timeline</span></h2>
+                <p>The step-by-step journey of an Indian election cycle.</p>
+            </div>
+            
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <h3>1. Announcement & MCC</h3>
+                        <p>The ECI announces election dates. The Model Code of Conduct (MCC) comes into effect immediately to ensure a level playing field.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <h3>2. Nominations</h3>
+                        <p>Candidates file their nomination papers, which are scrutinized by returning officers. Candidates also have a window to withdraw their names.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <h3>3. Campaigning</h3>
+                        <p>Political parties and candidates campaign to woo voters. Campaigning stops 48 hours before the polling day (silence period).</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <h3>4. Polling Day</h3>
+                        <p>Voters cast their votes using Electronic Voting Machines (EVMs) and Voter Verifiable Paper Audit Trails (VVPATs) at designated polling stations.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card timeline-content">
+                        <h3>5. Counting & Results</h3>
+                        <p>EVMs are opened in the presence of candidate representatives. Votes are counted, and the candidate with the highest votes in a constituency is declared the winner.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FLASHCARDS SECTION -->
+        <section id="flashcards" class="view-section hidden">
+            <div class="section-header">
+                <h2>Interactive <span class="highlight">Flashcards</span></h2>
+                <p>Click on a card to flip and reveal the definition. Test your terminology.</p>
+            </div>
+
+            <div class="flashcard-grid" id="flashcard-container">
+                <!-- Cards injected via JS -->
+            </div>
+            
+            <div class="flashcard-controls">
+                <button class="btn btn-secondary" id="prev-card"><i class="fa-solid fa-arrow-left"></i> Previous</button>
+                <span id="card-counter">1 / 5</span>
+                <button class="btn btn-secondary" id="next-card">Next <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <!-- QUIZ SECTION -->
+        <section id="quiz" class="view-section hidden">
+            <div class="section-header">
+                <h2>Knowledge <span class="highlight">Quiz</span></h2>
+                <p>Test what you've learned about the Indian electoral system.</p>
+            </div>
+
+            <div class="glass-card quiz-container" id="quiz-container">
+                <div id="quiz-start" class="quiz-view active">
+                    <h3>Ready to test your knowledge?</h3>
+                    <p>There are 5 questions in this quiz. Try to score a perfect 100%!</p>
+                    <button class="btn btn-primary" id="start-quiz-btn">Start Quiz</button>
+                </div>
+
+                <div id="quiz-question" class="quiz-view hidden">
+                    <div class="quiz-header">
+                        <span class="question-number">Question <span id="q-num">1</span> of 5</span>
+                        <div class="progress-bar">
+                            <div class="progress" id="quiz-progress" style="width: 20%;"></div>
+                        </div>
+                    </div>
+                    <h3 id="question-text" class="question-text">Question goes here?</h3>
+                    <div class="options-grid" id="options-container">
+                        <!-- Options injected via JS -->
+                    </div>
+                </div>
+
+                <div id="quiz-result" class="quiz-view hidden">
+                    <div class="result-circle">
+                        <span id="final-score">80%</span>
+                    </div>
+                    <h3>Quiz Completed!</h3>
+                    <p id="result-message">Great job! You know your democracy well.</p>
+                    <button class="btn btn-primary" id="restart-quiz-btn">Restart Quiz</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- CHATBOT WIDGET -->
+    <div class="chatbot-container" id="chatbot">
+        <div class="chat-header">
+            <div class="chat-title">
+                <i class="fa-solid fa-robot"></i> Election AI
+            </div>
+            <button class="close-chat" id="close-chat"><i class="fa-solid fa-times"></i></button>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message bot-message">
+                Hello! I am your Election Assistant. Ask me anything about the Indian election process, voter registration, or key terms like EVM!
+            </div>
+        </div>
+        <div class="chat-input-container">
+            <input type="text" id="chat-input" placeholder="Type a question (e.g. How to vote?)..." autocomplete="off">
+            <button id="send-chat"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+    
+    <button class="chat-toggle-btn" id="chat-toggle">
+        <i class="fa-solid fa-comment-dots"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
